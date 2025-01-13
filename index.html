@@ -10,24 +10,52 @@
 <main>
 <section>
 <h1> 
+    <span class="flex"> 
     <span> Empresa X </span>
     <span> Balanço Patrimonial</span>
+</span>
 </h1>
-<div> 
-<span> 2023</span>
-<span>2024</span>
-<span>2025</span>
+<div id="years" aria-hidden="true"> 
+<span class="year"> 2023</span>
+<span class="year">2024</span>
+<span class="year">2025</span>
 </div>
-<div>
+<div class="table-wrap">
     <table>
         <caption>Bens</caption>
         <thead>
         <tr>
-            <th> </th>
+            <th><span class="sr-only year">2023</span></th>
+            <th><span class="sr-only year">2024</span> </th>
+            <th class="current"><span class="sr-only year">2025</span></th>
         </tr>
         </thead>
         <tbody>
+            <tr class="data">
+                <th>Dinheiro Este é o dinheiro que atualmente temos em mãos</th>
+                <td>R$25</td>
+                <td>R$30</td>
+                <td>R$28</td>
+            </tr>
+            <tr>
+            <th>Controle Nossa conta transacional principal. </th>
+            <td>R$54</td>
+            <td>R$56</td>
+            <td>R$53</td>
+            </tr>
 
+            <tr>
+                <th> Poupança Fundos reservados para emergências.</th>
+                <td>R$500</td>
+                <td>R$650</td>
+                <td>R$728</td>
+            </tr>
+            <tr>
+                <th>Total Bens</th>
+                <td>R$579</td>
+                <td>R$736</td>
+                <td>R$809</td>
+            </tr>
         </tbody>
     </table>
 
